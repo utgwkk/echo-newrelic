@@ -2,6 +2,8 @@
 Echo middleware for New Relic
 
 ```go
+import "github.com/utgwkk/echo-newrelic/v3"
+
 app, err := newrelic.NewApplication(...)
 
 e.Use(echonewrelic.EchoMiddleware(app))

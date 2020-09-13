@@ -1,4 +1,4 @@
-module github.com/utgwkk/echo-newrelic
+module github.com/utgwkk/echo-newrelic/v3
 
 go 1.13
 
