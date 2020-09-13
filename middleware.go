@@ -4,11 +4,11 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	newrelic "github.com/newrelic/go-agent"
+	"github.com/newrelic/go-agent/v3/newrelic"
 )
 
 // EchoMiddleware returns echo Middleware integrated with New Relic agent (given with `app`)
-func EchoMiddleware(app newrelic.Application) echo.MiddlewareFunc {
+func EchoMiddleware(app *newrelic.Application) echo.MiddlewareFunc {
 	// refs: echo.WrapMiddleware
 	return func(next echo.HandlerFunc) echo.HandlerFunc {
 		return func(c echo.Context) (err error) {
