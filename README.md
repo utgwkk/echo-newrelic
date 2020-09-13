@@ -2,7 +2,7 @@
 Echo middleware for New Relic
 
 ```go
-import "github.com/utgwkk/echo-newrelic/v3"
+import echonewrelic "github.com/utgwkk/echo-newrelic/v3"
 
 app, err := newrelic.NewApplication(...)
 
